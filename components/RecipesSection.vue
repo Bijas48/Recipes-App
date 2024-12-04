@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { type RecipeResponse } from "~/types/types";
 const { data, error } = await useFetch<RecipeResponse>(
   "https://dummyjson.com/recipes?limit=12"
 );
