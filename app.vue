@@ -8,10 +8,10 @@
 
 <style>
 html {
-  font-family: Plus Jakarta Sans, sans-serif;
+  font-family: "Plus Jakarta Sans", "sans-serif";
 }
 
 .secondary-text {
-  font-family: Caveat, sans-serif;
+  font-family: "Caveat", "sans-serif";
 }
 </style>
