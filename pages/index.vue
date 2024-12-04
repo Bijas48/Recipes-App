@@ -1,8 +1,4 @@
-<script lang="ts" setup>
-const { data, error } = await useFetch<RecipeResponse>(
-  "https://dummyjson.com/recipes?limit=12"
-);
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <main>
@@ -17,11 +13,12 @@ const { data, error } = await useFetch<RecipeResponse>(
           <p class="text-lg lg:text-2xl mb-8 text-balance">
             Discover recipes helping you to find the easiest way to cook.
           </p>
-          <button
-            class="px-4 py-2 text-white self-start bg-dodgeroll-gold rounded-md text-lg cursor-pointer bg-orange-600"
+          <NuxtLink
+            to="/recipes"
+            class="px-4 py-3 text-white self-start bg-dodgeroll-gold rounded-md text-lg cursor-pointer bg-orange-600"
           >
             Browse Recipes
-          </button>
+          </NuxtLink>
         </div>
         <div class="flex-1 order-1 lg:order-2">
           <NuxtImg
