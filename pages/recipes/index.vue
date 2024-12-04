@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h1>Halaman Recipes</h1>
-  </div>
+  <RecipesSection />
 </template>
 
 <script setup lang="ts"></script>

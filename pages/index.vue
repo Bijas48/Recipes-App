@@ -1,4 +1,9 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const { data, error } = await useFetch<RecipeResponse>(
+  "https://dummyjson.com/recipes?limit=12"
+);
+</script>
+
 <template>
   <main>
     <section class="bg-[#f1f1f1] px-12">
@@ -29,6 +34,7 @@
         </div>
       </div>
     </section>
+    <RecipesSection />
   </main>
 </template>
 
