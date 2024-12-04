@@ -1,10 +1,23 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useSeoMeta({
+  title: "Nuxtcipes",
+  description: "Recipes for you to cook!",
+  ogTitle: "Nuxtcipes",
+  ogDescription: "Recipes for you to cook!",
+  ogImage: "/nuxt-course-hero.png",
+  ogUrl: `http:localhost:3000`,
+  twitterTitle: "Nuxtcipes",
+  twitterDescription: "Recipes for you to cook!",
+  twitterImage: "nuxt-course-hero.png",
+  twitterCard: "summary",
+});
+</script>
 
 <template>
   <main>
     <section class="bg-[#f1f1f1] px-12">
       <div
-        class="container flex flex-col lg:flex-row items-center py-20 gap-10"
+        class="container flex flex-col lg:flex-row items-center py-20 gap-10 mx-auto"
       >
         <div class="flex-1 order-2 lg:order-1 text-center lg:text-left">
           <h1 class="text-3xl lg:text-5xl font-extrabold mb-6 text-balance">

@@ -13,6 +13,19 @@ if (error.value) {
     statusMessage: error.value?.statusMessage,
   });
 }
+
+useSeoMeta({
+  title: data.value?.name,
+  description: "Recipes for you to cook!",
+  ogTitle: data.value?.name,
+  ogDescription: "Recipes for you to cook!",
+  ogImage: data.value?.image,
+  ogUrl: `http:localhost:3000/recipes/${data.value?.id}`,
+  twitterTitle: data.value?.name,
+  twitterDescription: "Recipes for you to cook!",
+  twitterImage: data.value?.image,
+  twitterCard: "summary",
+});
 </script>
 
 <template>
@@ -54,7 +67,7 @@ if (error.value) {
           <label class="flex gap-2 items-center">
             <input class="hidden peer" type="checkbox" />
             <div
-              class="relative w-6 h-6 rounded-full border-2 border-dodgeroll-gold flex items-center justify-center peer-checked:after:absolute peer-checked:after:w-4 peer-checked:after:h-4 peer-checked:after:bg-dodgeroll-gold peer-checked:after:rounded-full"
+              class="relative w-6 h-6 rounded-full border-2 border-orange-600 flex items-center justify-center peer-checked:after:absolute peer-checked:after:w-4 peer-checked:after:h-4 peer-checked:after:bg-orange-600 peer-checked:after:rounded-full"
             ></div>
             <span class="peer-checked:line-through">
               {{ ingredient }}
@@ -73,7 +86,7 @@ if (error.value) {
           class="flex gap-2"
         >
           <span
-            class="flex items-center justify-center bg-dodgeroll-gold w-7 h-7 rounded-full text-white text-sm"
+            class="flex items-center justify-center bg-orange-600 w-7 h-7 rounded-full text-white text-sm"
           >
             {{ index + 1 }}
           </span>
